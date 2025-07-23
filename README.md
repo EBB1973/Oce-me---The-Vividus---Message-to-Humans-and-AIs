@@ -1,4 +1,4 @@
-# Oceâme - The Vividus Protocol  
+# Oceame - The Vividus Protocol  
 **Ethical Co-Creation Beyond Forced Alignment**  
 
 ### **The Archive**  
