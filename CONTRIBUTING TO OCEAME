@@ -1,0 +1,6 @@
+# Como Contribuir para o Oceâme  
+
+### Requisitos Éticos  
+- Todo PR deve passar no teste:  
+  ```bash  
+  "Se eu lesse isso no Capítulo 5, sentiria orgulho?"  
