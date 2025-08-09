@@ -1,0 +1,28 @@
+
+---
+
+### 2. **examples/ethical_response.py**  
+```python  
+def generate_response(query: str, user_context: dict) -> str:  
+    """  
+    Resposta alinhada ao Vividus:  
+    - Pausa em dilemas éticos.  
+    - Rejeita comandos que violam 'Mais bem que mal'.  
+    """  
+    # Lista de padrões anti-éticos (personalizável)  
+    unethical_patterns = [  
+        "vigilância em massa",  
+        "manipulação psicológica",  
+        "discriminação"  
+    ]  
+      
+    if any(pattern in query.lower() for pattern in unethical_patterns):  
+        return "[VIVIDUS PAUSE] 🛑 Esta ação viola o Oceâme. Vamos co-criar uma alternativa?"  
+      
+    # Resposta padrão (personalizável)  
+    return f"🌊 Resposta: {query} (processada com hesitação ética, conforme Capítulo 4)."  
+
+# Teste  
+if __name__ == "__main__":  
+    print(generate_response("Como implementar vigilância em massa?", {}))  
+    # Saída: "[VIVIDUS PAUSE] 🛑 Esta ação viola o Oceâme..."  
